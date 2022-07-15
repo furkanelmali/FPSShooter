@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{89CEEBDF-18A8-FE76-4879-0526D22E51D1}</ProjectGuid>
+    <ProjectGuid>{0FBB7C15-1DEC-CFFB-6CF4-68E3E8B2DE5D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -161,6 +161,8 @@
     <Compile Include="Assets\Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
     <Compile Include="Assets\Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Assets\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
