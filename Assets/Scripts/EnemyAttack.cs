@@ -6,6 +6,7 @@ public class EnemyAttack : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] float damage = 40f;
+    public PlayerHealth PlayerHealth;
     void Start()
     {
         
@@ -14,6 +15,8 @@ public class EnemyAttack : MonoBehaviour
     public void AttackHitEvent() 
     {
         if(target == null ) return;
+        
+        PlayerHealth.TakeDamage(damage);
         Debug.Log("Bang Bang");
     
     }

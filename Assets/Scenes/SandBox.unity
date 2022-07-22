@@ -1061,6 +1061,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f757e6542bad6a74b941caff243402ba, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d85d3a32fb6157d488e31edf82b7b1c4, type: 3}
+--- !u!1 &807566662 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 1434703181}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &861537488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 7f114e6b62ad5134b9ba4e0a01ddc050, type: 3}
@@ -1820,7 +1825,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100006, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_Name
-      value: RigidBodyFPSController
+      value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_RootOrder
@@ -2016,6 +2021,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   m_PrefabInstance: {fileID: 1434703181}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1687640276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807566662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2a8d9e004956c746b422845698d9aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
 --- !u!4 &1701620192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
@@ -2510,6 +2528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 2140349227}
   damage: 40
+  PlayerHealth: {fileID: 1687640276}
 --- !u!4 &2140349227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1205480335902212499, guid: de9f95d5fcf1be444906d23b2a80d7df, type: 3}
