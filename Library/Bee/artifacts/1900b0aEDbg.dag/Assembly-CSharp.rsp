@@ -329,6 +329,9 @@
 -r:"C:/Users/furka/Documents/GitHub/FPSShooter/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"C:/Users/furka/Documents/GitHub/FPSShooter/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"C:/Users/furka/Documents/GitHub/FPSShooter/Library/PackageCache/com.unity.visualscripting@1.7.6/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Boxophobic.SkyboxCubemapExtended.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Boxophobic.Utils.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Boxophobic.Utils.Scripts.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
@@ -461,6 +464,7 @@
 "Assets/Scripts/EnemyAttack.cs"
 "Assets/Scripts/EnemyHealth.cs"
 "Assets/Scripts/PlayerHealth.cs"
+"Assets/Scripts/SceneLoading.cs"
 "Assets/Scripts/Weapon.cs"
 -langversion:9.0
 
