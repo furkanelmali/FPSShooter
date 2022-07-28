@@ -13,11 +13,12 @@ public class EnemyAI : MonoBehaviour
     float distanceToTarget = Mathf.Infinity;
     bool isProvoked = false;
 
-
+    EnemyHealth health;
 
     // Start is called before the first frame update
     void Start()
     {
+        health = GetComponent<EnemyHealth>();
         navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
@@ -56,6 +57,13 @@ public class EnemyAI : MonoBehaviour
         {
             attackTarget();
         }
+    
+    }
+
+    public void AmIGetShoot() 
+    {
+
+        isProvoked = true;
     
     }
 

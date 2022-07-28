@@ -2534,6 +2534,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+      propertyPath: field of view
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: near clip plane
       value: 0.01
       objectReference: {fileID: 0}
@@ -2877,6 +2881,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!114 &1687640280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807566662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d075ac32076d419428bbe915d196ee77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GameOverCanvas: {fileID: 214475792}
+--- !u!114 &1687640281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 807566662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba4e6f280e36544f96d10795669640e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 1595560682}
+  normalFOV: 60
+  zoomedFOV: 30
+  normalSensivity: 2
+  zoomedSensivity: 0.5
 --- !u!4 &1701620192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
@@ -3343,7 +3377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52df276a2de9b9746822e85d42a3ae98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitPoints: 100
+  hitPoints: 150
 --- !u!65 &2140349222
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3513,6 +3547,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1687640272}
+    - target: {fileID: 1205480335902212500, guid: de9f95d5fcf1be444906d23b2a80d7df, type: 3}
+      propertyPath: turnSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1205480335902212500, guid: de9f95d5fcf1be444906d23b2a80d7df, type: 3}
+      propertyPath: chaseRange
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1205480335902212501, guid: de9f95d5fcf1be444906d23b2a80d7df, type: 3}
       propertyPath: m_Height
       value: 1.91

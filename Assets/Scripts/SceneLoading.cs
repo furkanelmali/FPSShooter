@@ -8,7 +8,7 @@ public class SceneLoading : MonoBehaviour
    public void Restart() 
    {
         SceneManager.LoadScene(0);
-
+        Time.timeScale = 1;
    }
 
    public void ExitTheGame()
