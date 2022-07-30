@@ -460,6 +460,7 @@
 "Assets/Assets/Standard Assets/Vehicles/Car/Scripts/SkidTrail.cs"
 "Assets/Assets/Standard Assets/Vehicles/Car/Scripts/Suspension.cs"
 "Assets/Assets/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs"
+"Assets/Scripts/Ammo.cs"
 "Assets/Scripts/DeathHandler.cs"
 "Assets/Scripts/EnemyAI.cs"
 "Assets/Scripts/EnemyAttack.cs"
@@ -467,6 +468,7 @@
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/SceneLoading.cs"
 "Assets/Scripts/Weapon.cs"
+"Assets/Scripts/WeaponSwitcher.cs"
 "Assets/Scripts/WeaponZoom.cs"
 -langversion:9.0
 

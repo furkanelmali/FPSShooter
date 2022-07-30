@@ -18,7 +18,7 @@ public class WeaponZoom : MonoBehaviour
 
     private void Start()
     {
-        rfpc = GetComponent<RigidbodyFirstPersonController>();  
+        rfpc = GetComponentInParent<RigidbodyFirstPersonController>();  
     }
     private void Update()
     {

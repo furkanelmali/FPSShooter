@@ -418,6 +418,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5862bbfe91a75054ca72c13b555b6ac5, type: 3}
   m_PrefabInstance: {fileID: 64711613}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &139468254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1128131465, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
+  m_PrefabInstance: {fileID: 1434703181}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &210361139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1532,7 +1537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d85d3a32fb6157d488e31edf82b7b1c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 103.2055
+      value: 103.091
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d85d3a32fb6157d488e31edf82b7b1c4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1731,7 +1736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.358894
+      value: 51.48
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1739,7 +1744,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 111.02014
+      value: 113.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1849,7 +1854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010603206014, guid: d578b1ceee0904847a0d841e1b51c9c2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4000010118735060, guid: d578b1ceee0904847a0d841e1b51c9c2, type: 3}
       propertyPath: m_RootOrder
@@ -2209,7 +2214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 45.182514
+      value: 47.48
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2543,7 +2548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1947188796715660, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2341429926974787107, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: looping
@@ -2578,6 +2583,25 @@ MonoBehaviour:
   damage: 25
   muzzleFlash: {fileID: 671307335}
   hitEffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+  timeBetweenShots: 0.1
+  ammoSlot: {fileID: 1687640281}
+--- !u!114 &1437295671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437295668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eba4e6f280e36544f96d10795669640e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCam: {fileID: 1595560682}
+  normalFOV: 60
+  zoomedFOV: 30
+  normalSensivity: 2
+  zoomedSensivity: 0.5
 --- !u!1 &1474255911
 GameObject:
   m_ObjectHideFlags: 0
@@ -2903,14 +2927,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 807566662}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eba4e6f280e36544f96d10795669640e, type: 3}
+  m_Script: {fileID: 11500000, guid: ed392db14f36afd41ba59bca1c10d53e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCam: {fileID: 1595560682}
-  normalFOV: 60
-  zoomedFOV: 30
-  normalSensivity: 2
-  zoomedSensivity: 0.5
+  ammoAmount: 10
 --- !u!4 &1701620192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 5d2e4237b4429b34fae4c9eb3cd9efd5, type: 3}
@@ -3179,10 +3199,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FPCamera: {fileID: 1595560682}
-  range: 100
-  damage: 25
+  range: 60
+  damage: 50
   muzzleFlash: {fileID: 736997873}
   hitEffect: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 3}
+  timeBetweenShots: 3
+  ammoSlot: {fileID: 1687640281}
 --- !u!4 &2040051783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 9ae7f9f9eacff4142b21eb85ae606fdc, type: 3}
@@ -3360,6 +3382,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1128131466, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
   m_PrefabInstance: {fileID: 1434703181}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2095858997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139468254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbf5e04c9d7cf1347bc75cb8a029a68a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentWeapon: 1
 --- !u!1 &2140349217 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1205480335902212498, guid: de9f95d5fcf1be444906d23b2a80d7df, type: 3}
