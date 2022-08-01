@@ -47,4 +47,15 @@ public class WeaponZoom : MonoBehaviour
         }
     
     }
+
+    private void OnDisable()
+    {
+        if (zoomedInToggle == true) 
+        {
+            zoomedInToggle = false;
+            mainCam.fieldOfView = normalFOV;
+            rfpc.mouseLook.XSensitivity = normalSensivity;
+            rfpc.mouseLook.YSensitivity = normalSensivity;
+        }
+    }
 }

@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{0FBB7C15-1DEC-CFFB-6CF4-68E3E8B2DE5D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -126,6 +127,7 @@
     <Compile Include="Assets\Assets\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
     <Compile Include="Assets\Assets\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
     <Compile Include="Assets\Assets\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+    <Compile Include="Assets\Scripts\AmmoType.cs" />
     <Compile Include="Assets\Assets\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
     <Compile Include="Assets\Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
@@ -165,6 +167,7 @@
     <Compile Include="Assets\Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
     <Compile Include="Assets\Assets\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
     <Compile Include="Assets\Assets\Standard Assets\Cameras\Scripts\LookatTarget.cs" />
+    <Compile Include="Assets\Scripts\AmmoPickup.cs" />
     <Compile Include="Assets\Assets\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
     <Compile Include="Assets\Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\Assets\Standard Assets\ParticleSystems\Scripts\Hose.cs" />

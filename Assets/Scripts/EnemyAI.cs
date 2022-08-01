@@ -24,7 +24,11 @@ public class EnemyAI : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
+    {
+        if (health.isDead) 
+        { enabled = false; 
+          navMeshAgent.enabled = false;
+        }
         distanceToTarget = Vector3.Distance(transform.position, target.position);
 
         if (isProvoked)
