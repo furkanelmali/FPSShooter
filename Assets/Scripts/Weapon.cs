@@ -15,6 +15,8 @@ public class Weapon : MonoBehaviour
 
     bool canShoot = true;
 
+    
+    
     private void OnEnable()
     {
         canShoot = true;
@@ -32,12 +34,16 @@ public class Weapon : MonoBehaviour
         canShoot = false;
         if(ammoSlot.getCurrentAmmo(ammoType) > 0) 
         {
+            GetComponent<Animator>().SetBool("Shoot",true);
             PlayMuzzleFlash();
             ProcessRaycast();
             ammoSlot.ReduceCurrentAmmo(ammoType);
         }
+        
         yield return new WaitForSeconds(timeBetweenShots);
-        canShoot=true;
+        GetComponent<Animator>().SetBool("Shoot", false);
+        canShoot =true;
+        
     }
     private void PlayMuzzleFlash() 
     {
@@ -45,6 +51,8 @@ public class Weapon : MonoBehaviour
         muzzleFlash.Play();
     
     }
+
+    
     private void ProcessRaycast()
     {
         RaycastHit hit;
@@ -71,7 +79,8 @@ public class Weapon : MonoBehaviour
     {
 
        GameObject impact =  Instantiate(hitEffect, hit.point, Quaternion.identity);
-       Destroy(impact, .1f);
+        
+        Destroy(impact, .1f);
 
     }
 }
