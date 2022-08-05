@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8441814861639708023}
+  - component: {fileID: 863640918}
+  - component: {fileID: 863640917}
   m_Layer: 0
   m_Name: AMMOPickups
   m_TagString: Untagged
@@ -25,13 +27,39 @@ Transform:
   m_GameObject: {fileID: 7191273988332128470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.24902332, y: 0.24902332, z: 0.24902332}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 391317871892190564}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &863640918
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7191273988332128470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.724158, y: 3.4468136, z: 5.1040263}
+  m_Center: {x: -0.11424447, y: 0.3318291, z: -0.026464378}
+--- !u!114 &863640917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7191273988332128470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94832dc8409cf584d850fdb497d69b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ammoAmount: 5
 --- !u!1001 &4617466466700951166
 PrefabInstance:
   m_ObjectHideFlags: 0
